@@ -24,18 +24,8 @@ export default function Navigation() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/app" className="nav-link">
-              App
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link to="/dashboard" className="nav-link">
               Dashboard
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/wireframes" className="nav-link">
-              Maquettes
             </Link>
           </li>
         </ul>

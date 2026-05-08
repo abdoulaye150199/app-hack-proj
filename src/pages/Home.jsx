@@ -9,13 +9,20 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <h1 className="hero-title">{homeData.title}</h1>
+          <h1 className="hero-title">
+            SEN-MOOL <span className="protect">PROTECT</span> <span className="version">2.0</span>
+          </h1>
           <p className="hero-subtitle">{homeData.subtitle}</p>
           <p className="hero-description">{homeData.description}</p>
 
           <div className="hero-buttons">
-            {homeData.ctaButtons.map((btn) => (
-              <Button key={btn.id} href={btn.link} variant="primary" size="lg">
+            {homeData.ctaButtons.map((btn, index) => (
+              <Button 
+                key={btn.id} 
+                href={btn.link} 
+                variant={index === 0 ? "primary" : "secondary"} 
+                size="lg"
+              >
                 <span>{btn.icon}</span>
                 {btn.text}
               </Button>
@@ -24,7 +31,7 @@ export default function Home() {
         </div>
 
         <div className="hero-image">
-          <div className="watch-image">⌚</div>
+          <img src="/hero.png" alt="Mool-Safe Bracelet" className="watch-image" />
         </div>
       </section>
 

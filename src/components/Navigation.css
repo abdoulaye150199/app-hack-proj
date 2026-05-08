@@ -1,10 +1,10 @@
 .navbar {
-  background: linear-gradient(135deg, #0d3b66 0%, #155a7c 100%);
-  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #0d4a63 0%, #1a6a88 50%, #0a5a7a 100%);
+  padding: 0.75rem 2rem;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .nav-logo {
@@ -22,65 +22,85 @@
   gap: 0.5rem;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 900;
+  font-size: 0.95rem;
   white-space: nowrap;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
 }
 
 .logo-icon {
   font-size: 1.5rem;
+  margin-right: 0.3rem;
 }
 
 .logo-text {
   color: white;
+  letter-spacing: 0.5px;
 }
 
 .logo-protect {
-  color: #2dd4bf;
+  color: #00d9d9;
   margin-left: 0.3rem;
+  font-weight: 900;
 }
 
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 4rem;
   margin: 0;
   padding: 0;
   flex: 1;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav-item {
   position: relative;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .nav-link {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  display: inline;
+  color: #c8d9e0 !important;
+  text-decoration: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
   transition: all 0.3s ease;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .nav-link:hover {
-  background-color: rgba(45, 212, 191, 0.2);
-  color: #2dd4bf;
+  color: #00d9ff;
+  text-shadow: 0 0 10px rgba(0, 217, 217, 0.4);
 }
 
 .nav-flags {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.8rem;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .flag {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .flag:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
+  filter: brightness(1.2);
 }
 
 @media (max-width: 768px) {

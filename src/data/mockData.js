@@ -8,20 +8,14 @@ export const homeData = {
     {
       id: 1,
       text: "Découvrir Mool-Safe",
-      icon: "📱",
+      icon: "",
       link: "/mool-safe",
     },
     {
       id: 2,
       text: "Dashboard Mool-Control",
-      icon: "📊",
+      icon: "",
       link: "/dashboard",
-    },
-    {
-      id: 3,
-      text: "Maquettes & Wireframes",
-      icon: "📐",
-      link: "/wireframes",
     },
   ],
 };
